@@ -1,0 +1,566 @@
+[
+    {
+        "name": "ridley",
+        "chest_unopened_img": "images/tank_unopened.png",
+        "chest_opened_img": "images/tank_opened.png",
+        "color": "#bb3939",
+        "access_rules": [
+            "$AccessNorfair,$NorShaft,grip,$CeilingTunnel_8p",
+            "$AccessNorfair,$NorShaft,$CanIBJ,$CeilingTunnel_8p",
+            "$AccessNorfair,$NorShaft,$ActiveSpace,$CeilingTunnel_8p",
+            "$AccessNorfair,$NorShaft,IWJ,$CeilingTunnel_8p",
+            "$AccessNorfair,$NorHeatRun,speed,$CeilingTunnel_3_4,bomb",
+            "$AccessNorfair,$NorHeatRun,speed,$CeilingTunnel_3_4,powerbomb",
+            "$AccessNorfair,$NorHeatRun,speed,$CeilingTunnel_3_4,$ActivePlasma"
+        ],
+        "children": [
+            {
+                "name": "Ridley (3, 8)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 960,
+                        "y": 1920
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 160,
+                        "y": 448
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "speed,grip"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (3, 9)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 960,
+                        "y": 1952
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 160,
+                        "y": 480
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "speed,grip",
+                            "{speed}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (4, 6)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 992,
+                        "y": 1856
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 192,
+                        "y": 384
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher",
+                            "speed"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (5, 7)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1024,
+                        "y": 1888
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 224,
+                        "y": 416
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher",
+                            "speed"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (6, 7)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1056,
+                        "y": 1888
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 256,
+                        "y": 416
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Ability",
+                        "chest_unopened_img": "images/ability_unopened.png",
+                        "chest_opened_img": "images/ability_opened.png",
+                        "access_rules": [
+                            "$Launcher",
+                            "speed"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (7, 3)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1088,
+                        "y": 1760
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 288,
+                        "y": 288
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher",
+                            "speed"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (8, 4)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1120,
+                        "y": 1792
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 320,
+                        "y": 320
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher",
+                            "speed"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (8, 5)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1120,
+                        "y": 1824
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 320,
+                        "y": 352
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher",
+                            "{speed}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (9, 1)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1152,
+                        "y": 1696
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 352,
+                        "y": 224
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher",
+                            "speed"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (9, 4)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1152,
+                        "y": 1792
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 352,
+                        "y": 320
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher",
+                            "speed"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (9, 5)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1152,
+                        "y": 1824
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 352,
+                        "y": 352
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher",
+                            "speed"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (10, 8)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1184,
+                        "y": 1920
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 384,
+                        "y": 448
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher",
+                            "speed"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (12, 5)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1248,
+                        "y": 1824
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 448,
+                        "y": 352
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher",
+                            "speed"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (13, 5)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1280,
+                        "y": 1824
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 480,
+                        "y": 352
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher",
+                            "speed"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },          
+            {
+                "name": "Ridley (14, 4)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1312,
+                        "y": 1792
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 512,
+                        "y": 320
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher,super",
+                            "speed,super"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (16, 6)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1376,
+                        "y": 1856
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 576,
+                        "y": 384
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher",
+                            "speed"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (17, 7)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1408,
+                        "y": 1888
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 608,
+                        "y": 416
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher",
+                            "speed"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (19, 2)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1472,
+                        "y": 1728
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 672,
+                        "y": 256
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher,$LedgeNW_8p",
+                            "speed,$LedgeNW_8p"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley (22, 7)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1568,
+                        "y": 1888
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 768,
+                        "y": 416
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "speed,grip,morph,bomb",
+                            "{speed}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },          
+            {
+                "name": "Ridley (24, 5)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1632,
+                        "y": 1824
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 832,
+                        "y": 352
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "speed,wave",
+                            "{speed}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Ridley",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1104,
+                        "y": 1872,
+                        "size": 48
+                    },
+                    {
+                        "map": "ridley",
+                        "x": 304,
+                        "y": 400,
+                        "size": 48
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Boss",
+                        "access_rules": [
+                            "$Launcher",
+                            "speed"
+                        ],
+                        "hosted_item": "ridleyitem"
+                    }
+                ]
+            }
+        ]
+    }
+]

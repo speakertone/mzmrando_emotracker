@@ -1,0 +1,21 @@
+{
+    "tracker_broadcast": {
+        "type": "array",
+        "margin": "0",
+        "content": [
+            {
+                "type": "itemgrid",
+                "h_alignment": "left",
+                "item_margin": "2,3",
+                "item_size": "36",
+                "rows": [
+                    ["kraidpower","kraiditem","ridleyitem","motherbrainitem","charlieitem"],
+                    ["etanks","missile","supers","powerbomb"],
+                    ["morph","bomb","varia","gravity"],
+                    ["long","charge","ice","wave","plasma"],
+                    ["grip","hijump","speed","screw","space"]
+                ]
+            }
+        ]
+    }
+}

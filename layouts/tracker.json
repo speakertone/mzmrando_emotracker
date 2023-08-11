@@ -1,0 +1,410 @@
+{
+    "item_grid": {
+        "type": "itemgrid",
+        "h_alignment": "stretch",
+        "item_margin": "4,4",
+        "item_size": "36",
+        "rows": [
+            ["etanks","missile","super","powerbomb"],
+            ["morph","bomb","varia","gravity"],
+            ["long","charge","ice","wave","plasma"],
+            ["grip","hijump","speed","screw","space"]
+        ]
+    },
+    "boss_grid": {
+        "type": "itemgrid",
+        "h_alignment": "stretch",
+        "item_margin": "4,4",
+        "item_size": "36",
+        "rows": [
+            ["kraidpower","kraiditem","ridleyitem","motherbrainitem","charlieitem"]
+        ]
+    },
+    "settings_grid": {
+        "type": "array",
+        "margin": "5",
+        "content": [
+            {
+                "type": "group",
+                "header": "Settings and Enabled Tricks",
+                "content": [
+                    {
+                        "type": "array",
+                        "content": [
+                            {
+                                "type": "group",
+                                "header": "Tracker",
+                                "margin": "0, 0, 0, 10",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "margin":"0, 4, 0, 0",
+                                        "item": "DifficultyNormal"
+                                    },
+                                    {
+                                        "type": "canvas",
+                                        "margin": "0, 25, 0, 0",
+                                        "height": 16,
+                                        "content": [
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_top": 4,
+                                                "canvas_depth": 2,
+                                                "item": "PreventSoftLocks"
+                                            },
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_left": 212,
+                                                "canvas_depth": 1,
+                                                "item": "noautotracking"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "group",
+                                "header": "Options",
+                                "margin": "0, 0, 0, 10",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "margin": "0, 4, 0, 0",
+                                        "item": "IBNR"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "margin": "0, 29, 0, 0",
+                                        "item": "PBNR"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "group",
+                                "header": "Tricks",
+                                "margin": "0, 0, 0, 10",
+                                "content": [
+                                    {
+                                        "type": "canvas",
+                                        "margin": "0, 0, 0, 0",
+                                        "content": [
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_top": 4,
+                                                "canvas_depth": 2,
+                                                "item": "IBJ"
+                                            },
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_left": 212,
+                                                "canvas_depth": 1,
+                                                "item": "noautotracking"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "canvas",
+                                        "margin": "0, 25, 0, 0",
+                                        "height": 16,
+                                        "content": [
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_top": 4,
+                                                "canvas_depth": 2,
+                                                "item": "IWJ"
+                                            },
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_left": 212,
+                                                "canvas_depth": 1,
+                                                "item": "noautotracking"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "group",
+                                "header": "Misc",
+                                "margin": "0, 0, 0, 0",
+                                "content": [
+                                    {
+                                        "type": "item",
+                                        "margin":"0, 4, 0, 0",
+                                        "item": "EnableItemToggle"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "margin":"0, 29, 0, 0",
+                                        "item": "ObtainUnknownItems"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "margin":"0, 54, 0, 0",
+                                        "item": "RandomizeEnemies"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "tracker_default": {
+        "type": "container",
+        "background": "#085810",
+        "content": {
+            "type": "dock",
+            "dropshadow": false,
+            "content": [
+                {
+                    "type": "dock",
+                    "dock": "left",
+                    "v_alignment": "stretch",
+                    "margin": "0,0,3,0",
+                    "content": [
+                        {
+                            "type": "group",
+                            "header": "Items",
+                            "dock": "top",
+                            "header_content": {
+                                "type": "button_popup",
+                                "style": "settings",
+                                "popup_background": "#50212121",
+                                "layout": "settings_grid"
+                            },
+                            "content": [
+                                {
+                                    "type": "layout",
+                                    "margin":"0, 0, 0, 0",
+                                    "key": "boss_grid"
+                                },
+                                {
+                                    "type": "layout",
+                                    "margin":"0, 45, 0, 0",
+                                    "key": "item_grid"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "group",
+                            "header": "Pinnned Locations",
+                            "dock": "left",
+                            "content": {
+                                "type": "scroll",
+                                "horizontal_scrollbar_visibility": "disabled",
+                                "vertical_scrollbar_visibility": "auto",
+                                "content": {
+                                    "type": "recentpins",
+                                    "style": "wrap",
+                                    "h_alignment": "stretch",
+                                    "v_alignment": "stretch",
+                                    "orientation": "vertical",
+                                    "compact": true
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "dock",
+                    "v_alignment": "stretch",
+                    "margin": "0,0,0,0",
+                    "content": [
+                        {
+                            "type": "tabbed",
+                            "dock": "top",
+                            "tabs": [
+                                {
+                                    "title": "Full Map",
+                                    "icon": "images/icons/helmet.png",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["fullmap"]
+                                    }
+                                },
+                                {
+                                    "title": "Brinstar",
+                                    "icon": "images/icons/zoomer.png",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["brinstar"]
+                                    }
+                                },
+                                {
+                                    "title": "Kraid",
+                                    "icon": "images/icons/zeela.png",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["kraid"]
+                                    }
+                                },
+                                {
+                                    "title": "Norfair",
+                                    "icon": "images/icons/sova.png",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["norfair"]
+                                    }
+                                },
+                                {
+                                    "title": "Ridley",
+                                    "icon": "images/icons/viola.png",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["ridley"]
+                                    }
+                                },
+                                {
+                                    "title": "Crateria",
+                                    "icon": "images/icons/skultera.png",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["crateria"]
+                                    }
+                                },
+                                {
+                                    "title": "Chozodia",
+                                    "icon": "images/icons/spacepirate.png",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["chozodia"]
+                                    }
+                                },
+                                {
+                                    "title": "Tourian",
+                                    "icon": "images/icons/metroid.png",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["tourian"]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "tracker_vertical": {
+        "type": "container",
+        "background": "#28622e",
+        "content": {
+            "type": "dock",
+            "dropshadow": false,
+            "content": [
+                {
+                    "type": "dock",
+                    "dock": "bottom",
+                    "v_alignment": "stretch",
+                    "margin": "0,0,3,0",
+                    "content": [
+                      {
+                          "type": "group",
+                          "header": "Items",
+                          "header_content": {
+                              "type": "button_popup",
+                              "style": "settings",
+                              "popup_background": "#50212121",
+                              "layout": "settings_grid"
+                          },
+                          "content": {
+                              "type": "layout",
+                              "key": "item_grid"
+                          }
+                      },
+                        {
+                            "type": "group",
+                            "header": "Pinned Locations",
+                            "dock": "right",
+                            "content": {
+                                "type": "recentpins",
+                                "style": "wrap",
+                                "h_alignment": "stretch",
+                                "v_alignment": "stretch",
+                                "orientation": "vertical",
+                                "compact": true
+                            }
+                        }
+                    ]
+                  },
+                  {
+                      "type": "dock",
+                      "v_alignment":"stretch",
+                      "margin": "0,0,0,0",
+                      "content": [
+                          {
+                              "type": "tabbed",
+                              "dock": "top",
+                              "tabs": [
+                                  {
+                                    "title": "Full Map",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["fullmap"]
+                                      }
+                                  },
+                                  {
+                                      "title": "Brinstar",
+                                      "content": {
+                                          "type": "map",
+                                          "maps": ["brinstar"]
+                                      }
+                                  },
+                                  {
+                                      "title": "Crateria",
+                                      "content": {
+                                          "type": "map",
+                                          "maps": ["crateria"]
+                                      }
+                                  },
+                                  {
+                                      "title": "Kraid",
+                                      "content": {
+                                          "type": "map",
+                                          "maps": ["kraid"]
+                                      }
+                                  },
+                                  {
+                                      "title": "Norfair",
+                                      "content": {
+                                          "type": "map",
+                                          "maps": ["norfair"]
+                                      }
+                                  },
+                                  {
+                                      "title": "Ridley",
+                                      "content": {
+                                          "type": "map",
+                                          "maps": ["ridley"]
+                                      }
+                                  },
+                                  {
+                                    "title": "Chozodia",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["chozodia"]
+                                    }
+                                  },
+                                  {
+                                      "title": "Tourian",
+                                      "content": {
+                                          "type": "map",
+                                          "maps": ["tourian"]
+                                      }
+                                  }
+                              ]
+                          }
+                      ]
+                  }
+              ]
+          }
+    }
+}

@@ -1,0 +1,193 @@
+[
+    {
+        "name": "Crateria",
+        "chest_unopened_img": "images/tank_unopened.png",
+        "chest_opened_img": "images/tank_opened.png",
+        "color": "#de3f96",
+        "access_rules": [
+            "$AccessCrateria"
+        ],
+        "children": [
+            {
+                "name": "Crateria (9, 4)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 320,
+                        "y": 672
+                    },
+                    {
+                        "map": "crateria",
+                        "x": 288,
+                        "y": 256
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$CeilingTunnel_5,$BallSpark,powerbomb"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Crateria (14, 6)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 480,
+                        "y": 736
+                    },
+                    {
+                        "map": "crateria",
+                        "x": 448,
+                        "y": 320
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Ability",
+                        "chest_unopened_img": "images/ability_unopened.png",
+                        "chest_opened_img": "images/ability_opened.png",
+                        "access_rules": [ 
+                            "$CeilingTunnel_1_2"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Crateria (17, 8)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 576,
+                        "y": 800
+                    },
+                    {
+                        "map": "crateria",
+                        "x": 544,
+                        "y": 384
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [ ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Crateria (19, 5)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 640,
+                        "y": 704
+                    },
+                    {
+                        "map": "crateria",
+                        "x": 608,
+                        "y": 288
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [ 
+                            "$CeilingTunnel_1_2"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Crateria (20, 5)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 672,
+                        "y": 704
+                    },
+                    {
+                        "map": "crateria",
+                        "x": 640,
+                        "y": 288
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Ability",
+                        "chest_unopened_img": "images/ability_unopened.png",
+                        "chest_opened_img": "images/ability_opened.png",
+                        "access_rules": [ 
+                            "$CeilingTunnel_1_2"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Crateria (21, 5)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 704,
+                        "y": 704
+                    },
+                    {
+                        "map": "crateria",
+                        "x": 672,
+                        "y": 288
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$BallSpark,IWJ",
+                            "$BallSpark,$ActiveSpace",
+                            "{$CeilingTunnel_1_2}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Crateria (22, 2)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 736,
+                        "y": 608
+                    },
+                    {
+                        "map": "crateria",
+                        "x": 704,
+                        "y": 192
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$CeilingTunnel_5,speed,IWJ",
+                            "$CeilingTunnel_5,speed,$ActiveSpace",
+                            "{$LedgeNW_8p}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            }
+        ]
+    }
+]

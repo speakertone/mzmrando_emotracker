@@ -1,0 +1,16 @@
+{
+	"name": "MZMR Map Tracker",
+	"game_name": "Metroid: Zero Mission",
+	"game_variant": "Metroid: Zero Mission Item Randomizer v1.4.0",
+	"package_version": "1.0",
+	"package_uid": "mzmrando_speakertone",
+	"author": "speakertone",
+	"platform": "gba",
+
+	"variants":
+	{
+		"default": {
+			"display_name": "Standard Map Tracker"
+		}
+	}
+}

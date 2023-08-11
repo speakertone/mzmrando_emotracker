@@ -1,0 +1,500 @@
+[
+    {
+        "name": "Brinstar",
+        "chest_unopened_img": "images/tank_unopened.png",
+        "chest_opened_img": "images/tank_opened.png",
+        "color": "#0004fc",
+        "children": [
+            {
+                "name": "Brinstar (0, 15)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 544,
+                        "y": 1280
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 64,
+                        "y": 544
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Ability",
+                        "chest_unopened_img": "images/ability_unopened.png",
+                        "chest_opened_img": "images/ability_opened.png",
+                        "access_rules": [ ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (5, 14)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 704,
+                        "y": 1248
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 224,
+                        "y": 512
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$Launcher"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (6, 6)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 736,
+                        "y": 992
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 256,
+                        "y": 256
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Ability",
+                        "chest_unopened_img": "images/ability_unopened.png",
+                        "chest_opened_img": "images/ability_opened.png",
+                        "access_rules": [
+                            "morph,long",
+                            "morph,ice",
+                            "morph,wave",
+                            "morph,$ActivePlasma",
+                            "morph,$AnyMissileCount|2",
+                            "$BombChain",
+                            "{morph,PreventSoftLocks-off}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (7, 15)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 768,
+                        "y": 1280
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 288,
+                        "y": 544
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$ActiveSpace",
+                            "$CanIBJ",
+                            "Hard,$CanFreeze",
+                            "{}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (9, 11)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 832,
+                        "y": 1152
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 352,
+                        "y": 416
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "morph,$Ledge_6_7,$BombBlock"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (9, 12)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 832,
+                        "y": 1184
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 352,
+                        "y": 448
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$BallSpark",
+                            "{morph,$Ledge_6_7,$BombBlock}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (11, 3)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 896,
+                        "y": 896
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 416,
+                        "y": 160
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$CeilingTunnel_8p,$CeilingTunnel_1_2",
+                            "$CeilingTunnel_8p,$BombBlock"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (11, 12)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 896,
+                        "y": 1184
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 416,
+                        "y": 448
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$BombChain,$CeilingTunnel_1_2",
+                            "$BallSpark",
+                            "{morph}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (14, 2)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 992,
+                        "y": 864
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 512,
+                        "y": 128
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Ability",
+                        "chest_unopened_img": "images/ability_unopened.png",
+                        "chest_opened_img": "images/ability_opened.png",
+                        "access_rules": [
+                            "$BombChain,$CeilingTunnel_1_2,$LedgeNW_6_7,$CeilingTunnelNW_6_7,$CanOpenRedDoors"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (14, 12)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 992,
+                        "y": 1184
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 512,
+                        "y": 448
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Ability",
+                        "chest_unopened_img": "images/ability_unopened.png",
+                        "chest_opened_img": "images/ability_opened.png",
+                        "access_rules": [
+                            "morph,missile"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (16, 3)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1056,
+                        "y": 896
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 576,
+                        "y": 160
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$BombChain,$CeilingTunnel_1_2,$LedgeNW_6_7,$HeatImmune",
+                            "$BombChain,$CeilingTunnel_1_2,$LedgeNW_6_7,$EnergyCount|150",
+                            "{$BombChain,$CeilingTunnel_1_2,$LedgeNW_6_7}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (16, 12)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1056,
+                        "y": 1184
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 576,
+                        "y": 448
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "morph"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (17, 7)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1088,
+                        "y": 1024
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 608,
+                        "y": 288
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "morph,$CanOpenRedDoors"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (17, 10)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1088,
+                        "y": 1120
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 608,
+                        "y": 384
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "morph,$CanOpenRedDoors,$BombBlock,bomb",
+                            "AllowSoftLocks,morph,$CanOpenRedDoors,$BombChain",
+                            "{morph,$CanOpenRedDoors}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (22, 8)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1248,
+                        "y": 1056
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 768,
+                        "y": 320
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "morph,$CanOpenRedDoors"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (23, 4)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1280,
+                        "y": 928
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 800,
+                        "y": 192
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$BombChain,$CeilingTunnel_1_2"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (23, 6)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1280,
+                        "y": 992
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 800,
+                        "y": 256
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "missile,$BombChain,$CeilingTunnel_1_2",
+                            "{missile,$CanPowerBomb}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (24, 6)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1312,
+                        "y": 992
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 832,
+                        "y": 256
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Ability",
+                        "chest_unopened_img": "images/ability_unopened.png",
+                        "chest_opened_img": "images/ability_opened.png",
+                        "access_rules": [
+                            "morph,$CanOpenRedDoors"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Brinstar (24, 8)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1312,
+                        "y": 1056
+                    },
+                    {
+                        "map": "brinstar",
+                        "x": 832,
+                        "y": 320
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "morph,$CanOpenRedDoors"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

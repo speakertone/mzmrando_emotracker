@@ -1,0 +1,50 @@
+[
+    {
+        "name": "fullmap",
+        "img": "images/maps/fullmap.png",
+        "location_size": 32,
+        "location_border_thickness": 4
+    },
+    {
+        "name": "brinstar",
+        "img": "images/maps/brinstar.png",
+        "location_size": 32,
+        "location_border_thickness": 4
+    },
+    {
+        "name": "chozodia",
+        "img": "images/maps/chozodia.png",
+        "location_size": 32,
+        "location_border_thickness": 4
+    },
+    {
+        "name": "crateria",
+        "img": "images/maps/crateria.png",
+        "location_size": 32,
+        "location_border_thickness": 4
+    },
+    {
+        "name": "kraid",
+        "img": "images/maps/kraid.png",
+        "location_size": 32,
+        "location_border_thickness": 4
+    },
+    {
+        "name": "norfair",
+        "img": "images/maps/norfair.png",
+        "location_size": 32,
+        "location_border_thickness": 4
+    },
+    {
+        "name": "ridley",
+        "img": "images/maps/ridley.png",
+        "location_size": 32,
+        "location_border_thickness": 4
+    },
+    {
+        "name": "tourian",
+        "img": "images/maps/tourian.png",
+        "location_size": 32,
+        "location_border_thickness": 4
+    }
+]

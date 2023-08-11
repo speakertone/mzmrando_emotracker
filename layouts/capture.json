@@ -1,0 +1,16 @@
+{
+    "tracker_capture_item": {
+        "type": "container",
+        "content": {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "item_margin": "1,2",
+            "rows": [
+                ["etank_icon","missile_icon","supermissile_icon","powerbomb_icon"],
+                ["morph","bomb","varia","gravity"],
+                ["long","charge","ice","wave","plasma"],
+                ["grip","hijump","speed","screw","space"]
+            ]
+        }
+    }
+}

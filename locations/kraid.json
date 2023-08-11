@@ -1,0 +1,435 @@
+[
+    {
+        "name": "Kraid",
+        "chest_unopened_img": "images/tank_unopened.png",
+        "chest_opened_img": "images/tank_opened.png",
+        "color": "#068d19",
+        "children": [
+            {
+                "name": "Kraid (3, 5)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 352,
+                        "y": 1600
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 256,
+                        "y": 224
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$BombBlock,$CeilingTunnel_3_4,kraidpoweron",
+                            "$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p",
+                            "{$BombBlock,kraidpoweron}",
+                            "{$BombChain,$CeilingTunnel_1_2,$LedgeNW_8p}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Kraid (6, 6)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 448,
+                        "y": 1632
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 352,
+                        "y": 256
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "morph,$BombChain",
+                            "morph,$BombBlock,$CanOpenRedDoors,$BallSpark"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Kraid (7, 9)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 480,
+                        "y": 1728
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 384,
+                        "y": 352
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "morph,$BombBlock,$Ledge_4_5,kraidpoweron",
+                            "[],morph,$BombBlock,grip,IWJ",
+                            "{morph,$BombBlock}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Kraid (7, 12)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 480,
+                        "y": 1824
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 384,
+                        "y": 448
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$BombChain,$CeilingTunnel_3_4,kraidpoweron,$CanOpenRedDoors,$Launcher",
+                            "$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors,speed"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Kraid (7, 14)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 480,
+                        "y": 1888
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 384,
+                        "y": 512
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Ability",
+                        "chest_unopened_img": "images/ability_unopened.png",
+                        "chest_opened_img": "images/ability_opened.png",
+                        "access_rules": [
+                            "$BombChain,$CeilingTunnel_3_4,kraidpoweron",
+                            "$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Kraid (8, 8)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 512,
+                        "y": 1696
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 416,
+                        "y": 320
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$BombChain,$CeilingTunnel_3_4,$ActiveGravity,$BallSpark"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Kraid (8, 15)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 512,
+                        "y": 1920
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 416,
+                        "y": 544
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Ability",
+                        "chest_unopened_img": "images/ability_unopened.png",
+                        "chest_opened_img": "images/ability_opened.png",
+                        "access_rules": [
+                            "$BombChain,$CeilingTunnel_3_4,kraidpoweron,$CanOpenRedDoors",
+                            "$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors,$ActiveSpace",
+                            "$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors,speed,hijump",
+                            "$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors,hijump,grip,screw,$CanPowerBomb,$AccessNorfair,$HeatImmune",
+                            "[],$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors,hijump,grip,screw,$CanPowerBomb,$AccessNorfair,$EnergyCount|200",
+                            "{AllowSoftLocks,$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Kraid (11, 4)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 608,
+                        "y": 1568
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 512,
+                        "y": 192
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "kraidpoweron,$BombBlock,$CanOpenRedDoors,$Launcher,grip,$CeilingTunnel_5",
+                            "kraidpoweron,$BombBlock,$CanOpenRedDoors,$Launcher,$CanIBJ,$CeilingTunnel_5"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Kraid (11, 6)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 608,
+                        "y": 1632
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 512,
+                        "y": 256
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "morph,$BombBlock,$CanOpenRedDoors"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Kraid (12, 10)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 640,
+                        "y": 1760
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 544,
+                        "y": 384
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$BombChain,$CeilingTunnel_3_4,kraidpoweron",
+                            "$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors,$ActiveSpace",
+                            "$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors,speed,hijump",
+                            "$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors,hijump,grip,screw,$CanPowerBomb,$AccessNorfair,$HeatImmune",
+                            "[],$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors,hijump,grip,screw,$CanPowerBomb,$AccessNorfair,$EnergyCount|200",
+                            "{AllowSoftLocks,$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Kraid (13, 2)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 672,
+                        "y": 1504
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 576,
+                        "y": 128
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$BombBlock,$CanOpenRedDoors,$Launcher,grip,$CeilingTunnel_5",
+                            "$BombBlock,$CanOpenRedDoors,$Launcher,$Ledge_8p,$CeilingTunnel_5"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Kraid (13, 7)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 672,
+                        "y": 1664
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 576,
+                        "y": 288
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "morph,$BombBlock,$CanOpenRedDoors,speed",
+                            "{morph,$BombBlock,$CanOpenRedDoors}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Kraid (15, 4)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 736,
+                        "y": 1568
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 640,
+                        "y": 192
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$BombBlock,$CanOpenRedDoors,$Launcher"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Chozo Machine",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 640,
+                        "y": 1504
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 544,
+                        "y": 128
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Activate Power",
+                        "access_rules": [
+                            "$BombBlock,$CanOpenRedDoors,$Launcher,grip,$CeilingTunnel_5",
+                            "$BombBlock,$CanOpenRedDoors,$Launcher,$Ledge_8p,$CeilingTunnel_5"
+                        ],
+                        "hosted_item": "kraidpower"
+                    }
+                ]
+            },
+            /* {
+                "name": "Acid Worm",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 656,
+                        "y": 1552,
+                        "size": 48
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 560,
+                        "y": 176,
+                        "size": 48
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Boss",
+                        "access_rules": [
+                            "kraidpoweron,$BombBlock,$CanOpenRedDoors,$Launcher,grip,$CeilingTunnel_5",
+                            "kraidpoweron,$BombBlock,$CanOpenRedDoors,$Launcher,$Ledge_8p,$CeilingTunnel_5"
+                        ],
+                        "hosted_item": "acidwormitem"
+                    }
+                ]
+            }, */
+            {
+                "name": "Kraid",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 560,
+                        "y": 1904,
+                        "size": 48
+                    },
+                    {
+                        "map": "kraid",
+                        "x": 464,
+                        "y": 528,
+                        "size": 48
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Boss",
+                        "access_rules": [
+                            "$BombChain,$CeilingTunnel_3_4,kraidpoweron",
+                            "$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors,$ActiveSpace",
+                            "$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors,speed,hijump",
+                            "$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors,hijump,grip,screw,$CanPowerBomb,$AccessNorfair,$HeatImmune",
+                            "[],$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors,hijump,grip,screw,$CanPowerBomb,$AccessNorfair,$EnergyCount|200",
+                            "{AllowSoftLocks,$BombChain,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_8p,$CanOpenRedDoors}"
+                        ],
+                        "hosted_item": "kraiditem"
+                    }
+                ]
+            }
+        ]
+    }
+]

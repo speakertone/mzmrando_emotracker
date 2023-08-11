@@ -1,0 +1,560 @@
+[
+    {
+        "name": "Chozodia",
+        "chest_unopened_img": "images/tank_unopened.png",
+        "chest_opened_img": "images/tank_opened.png",
+        "access_rules": [
+            "$AccessCrateria,$CanPowerBomb,$CanIBJ",
+            "$AccessCrateria,$CanPowerBomb,grip,IWJ",
+            "$AccessCrateria,$CanPowerBomb,grip,bomb,hijump",
+            "$AccessCrateria,$CanPowerBomb,grip,powerbomb:3,hijump",
+            "$AccessCrateria,$AccessChozodiaTopEntrance,$CanOpenRedDoors,$Ledge_8p",
+            "$AccessCrateria,$AccessChozodiaTopEntrance,$CanOpenRedDoors,powerbomb:2",
+            "charlieitem,$LeaveChozodiaTemple",
+            "{AllowSoftLocks,$AccessCrateria,$CanPowerBomb}"
+        ],
+        "children": [
+            {
+                "name": "Chozo Temple",
+                "color": "#20c068",
+                "children": [
+                    {
+                        "name": "Chozodia (4, 18)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 928,
+                                "y": 672
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 256,
+                                "y": 672
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "$AccessChozodiaTopEntrance,$CanOpenRedDoors"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (4, 21)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 928,
+                                "y": 768
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 256,
+                                "y": 768
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [ 
+                                    "$CeilingTunnel_1_2,bomb,grip",
+                                    "$CeilingTunnel_1_2,powerbomb:4,grip",
+                                    "$CanIBJ"
+                                ],
+                                "item_count": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (6, 21)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 992,
+                                "y": 768
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 320,
+                                "y": 768
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [ 
+                                    "$CeilingTunnel_1_2,grip",
+                                    "$CanIBJ"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (7, 19)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1024,
+                                "y": 704
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 352,
+                                "y": 704
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "$AccessChozodiaTopEntrance,$BombChain,$CanOpenRedDoors,$Ledge_8p",
+                                    "speed,$BombChain,$CanOpenRedDoors",
+                                    "$LedgeNW_8p,$BombChain,$CanOpenRedDoors",
+                                    "{AllowSoftLocks,$AccessChozodiaTopEntrance,$BombChain,$CanOpenRedDoors}"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (10, 7)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1120,
+                                "y": 320
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 448,
+                                "y": 320
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "charlieitem,$CanOpenRedDoors,$CeilingTunnel_1_2,$LeaveChozodiaTemple",
+                                    "{AllowSoftLocks,charlieitem,$CanOpenRedDoors,$CeilingTunnel_1_2,IWJ,hijump}",
+                                    "{AllowSoftLocks,charlieitem,$CanOpenRedDoors,$CeilingTunnel_1_2,$ActiveSpace,$ActiveGravity}",
+                                    "{AllowSoftLocks,charlieitem,$CanOpenRedDoors,$CeilingTunnel_1_2,$ActiveSpace,IWJ}",
+                                    "{AllowSoftLocks,charlieitem,$CanOpenRedDoors,$CeilingTunnel_1_2,$LedgeNW_8p,$CanPowerBomb}"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (10, 8)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1120,
+                                "y": 352
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 448,
+                                "y": 352
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "$CanOpenRedDoors,$ActiveGravity,speed,$LeaveChozodiaTemple",
+                                    "{AllowSoftLocks,charlieitem,$CanOpenRedDoors,$ActiveGravity,speed,IWJ,hijump}",
+                                    "{AllowSoftLocks,charlieitem,$CanOpenRedDoors,$ActiveGravity,speed,$ActiveSpace}",
+                                    "{AllowSoftLocks,$CanOpenRedDoors,$ActiveGravity,speed,$LedgeNW_8p,$CanPowerBomb}"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (10, 9)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1120,
+                                "y": 384
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 448,
+                                "y": 384
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "$AnyMissileCount|3,$CanPowerBomb,$LeaveChozodiaTemple",
+                                    "{AllowSoftLocks,charlieitem,$AnyMissileCount|3,$CanPowerBomb,IWJ,hijump}",
+                                    "{AllowSoftLocks,charlieitem,$AnyMissileCount|3,$CanPowerBomb,$ActiveSpace,$ActiveGravity}",
+                                    "{AllowSoftLocks,charlieitem,$AnyMissileCount|3,$CanPowerBomb,$ActiveSpace,IWJ}",
+                                    "{AllowSoftLocks,charlieitem,$AnyMissileCount|3,$CanPowerBomb,$ActiveSpace}",
+                                    "{AllowSoftLocks,$AnyMissileCount|3,$CanPowerBomb,$LedgeNW_8p}"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (10, 18)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1120,
+                                "y": 672
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 448,
+                                "y": 672
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "speed"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (11, 13)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1152,
+                                "y": 512
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 480,
+                                "y": 512
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "charlieitem,$CanOpenRedDoors,$BombChain,$CeilingTunnel_1_2,grip,$ActiveGravity,$ChoLavaRun",
+                                    "charlieitem,$CanOpenRedDoors,screw,$CeilingTunnel_1_2,grip,$ActiveGravity,$ChoLavaRun",
+                                    "charlieitem,$CanOpenRedDoors,$BombChain,$CanIBJ,$ActiveGravity,$ChoLavaRun",
+                                    "charlieitem,$CanOpenRedDoors,screw,$CanIBJ,$ActiveGravity,$ChoLavaRun",
+                                    "charlieitem,$CanOpenRedDoors,$BombChain,hijump,grip,varia,$EnergyCount|300,$ChoLavaRun",
+                                    "charlieitem,$CanOpenRedDoors,screw,hijump,grip,varia,$EnergyCount|300,$ChoLavaRun",
+                                    "charlieitem,$CanOpenRedDoors,$BombChain,hijump,grip,$EnergyCount|600,$ChoLavaRun",
+                                    "charlieitem,$CanOpenRedDoors,screw,hijump,grip,$EnergyCount|600,$ChoLavaRun",
+                                    "{charlieitem,$CanOpenRedDoors,$BombChain,hijump,grip,varia,$EnergyCount|100}",
+                                    "{charlieitem,$CanOpenRedDoors,screw,hijump,grip,varia,$EnergyCount|100}",
+                                    "{charlieitem,$CanOpenRedDoors,$BombChain,hijump,grip,$EnergyCount|200}",
+                                    "{charlieitem,$CanOpenRedDoors,screw,hijump,grip,$EnergyCount|200}"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozo Guardian",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 992,
+                                "y": 256
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 320,
+                                "y": 256
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Boss",
+                                "access_rules": [
+                                    "motherbrainitem,IWJ,hijump,$CanPowerBomb,screw",
+                                    "motherbrainitem,IWJ,hijump,screw,$ChoLavaRun",
+                                    "motherbrainitem,IWJ,hijump,$BombChain,$ChoLavaRun",
+                                    "motherbrainitem,space,gravity,screw",
+                                    "motherbrainitem,space,gravity,$BombChain",
+                                    "motherbrainitem,space,IWJ,screw,$ChoLavaRun",
+                                    "motherbrainitem,space,IWJ,$BombChain,$ChoLavaRun",
+                                    "motherbrainitem,space,$CanPowerBomb,screw",
+                                    "$LedgeNW_8p,$CanPowerBomb,$ChoLavaRun",
+                                    "$LedgeNW_8p,$CanPowerBomb,screw",
+                                    "{AllowSoftLocks,motherbrainitem,IWJ,hijump}",
+                                    "{AllowSoftLocks,motherbrainitem,space,gravity}",
+                                    "{AllowSoftLocks,motherbrainitem,space,IWJ}",
+                                    "{AllowSoftLocks,motherbrainitem,space,$CanPowerBomb}",
+                                    "{AllowSoftLocks,$LedgeNW_8p,$CanPowerBomb}"
+                                ],
+                                "hosted_item": "charlieitem"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Space Pirate Mother Ship",
+                "color": "#d1b102",
+                "access_rules": [
+                    "$BombChain,$LedgeNW_8p"
+                ],
+                "children": [
+                    {
+                        "name": "Chozodia (14, 5)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1248,
+                                "y": 256
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 576,
+                                "y": 256
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "$CanPowerBomb,$CanOpenRedDoors",
+                                    "screw,$CanOpenRedDoors",
+                                    "$AnyMissileCount|2"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (15, 4)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1280,
+                                "y": 224
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 608,
+                                "y": 224
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "$CanPowerBomb,$CanOpenRedDoors"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (15, 13)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1280,
+                                "y": 512
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 608,
+                                "y": 512
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "speed",
+                                    "$Ledge_8p"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (17, 8)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1344,
+                                "y": 352
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 672,
+                                "y": 352
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "$CanOpenRedDoors,$ActiveGravity,speed,screw,$LeaveChozodiaTemple",
+                                    "{AllowSoftLocks,charlieitem,$CanOpenRedDoors,$ActiveGravity,speed,screw,IWJ,hijump}",
+                                    "{AllowSoftLocks,charlieitem,$CanOpenRedDoors,$ActiveGravity,speed,screw,$ActiveSpace}",
+                                    "{AllowSoftLocks,$CanOpenRedDoors,$ActiveGravity,speed,screw,$LedgeNW_8p,$CanPowerBomb}"
+                                ],
+                                "item_count": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (18, 7)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1376,
+                                "y": 320
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 704,
+                                "y": 320
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "$CanPowerBomb,$CanOpenRedDoors",
+                                    "screw,super",
+                                    "$AnyMissileCount|2,super"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (20, 7)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1440,
+                                "y": 320
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 768,
+                                "y": 320
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "$CanPowerBomb,$CanOpenRedDoors",
+                                    "screw,$CanOpenRedDoors",
+                                    "$AnyMissileCount|2"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (21, 15)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1472,
+                                "y": 576
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 800,
+                                "y": 576
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "$AnyMissileCount|2",
+                                    "$CanPowerBomb,$CanOpenRedDoors"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (22, 2)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1504,
+                                "y": 160
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 832,
+                                "y": 160
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "$CanPowerBomb,$CanOpenRedDoors,speed,$ActiveSpace"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chozodia (26, 14)",
+                        "map_locations": [
+                            {
+                                "map": "fullmap",
+                                "x": 1632,
+                                "y": 544
+                            },
+                            {
+                                "map": "chozodia",
+                                "x": 960,
+                                "y": 544
+                            }
+                        ],
+                        "sections": [
+                            {
+                                "name": "Tank",
+                                "access_rules": [
+                                    "$CanPowerBomb"
+                                ],
+                                "item_count": 1,
+                                "capture_item": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

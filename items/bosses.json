@@ -1,0 +1,44 @@
+[
+    {
+      "name": "Acid Worm",
+      "type": "toggle",
+      "loop": "true",
+      "img": "images/bosses/acidworm.png",
+      "codes": "acidwormitem,acidworm"
+    },
+    {
+      "name": "Kraid Power",
+      "type": "toggle",
+      "loop": "true",
+      "img": "images/bosses/kraidpower.png",
+      "codes": "kraidpower,kraidpoweron"
+    },
+    {
+      "name": "Kraid",
+      "type": "toggle",
+      "loop": "true",
+      "img": "images/bosses/kraid.png",
+      "codes": "kraiditem,kraid"
+    },
+    {
+      "name": "Ridley",
+      "type": "toggle",
+      "loop": "true",
+      "img": "images/bosses/ridley.png",
+      "codes": "ridleyitem,ridley"
+    },
+    {
+      "name": "Chozo Guardian",
+      "type": "toggle",
+      "loop": "true",
+      "img": "images/bosses/charlie.png",
+      "codes": "charlieitem,charlie,chozostatue,chozoguardian,ruinstest"
+    },
+    {
+      "name": "Mother Brain",
+      "type": "toggle",
+      "loop": "true",
+      "img": "images/bosses/motherbrain.png",
+      "codes": "motherbrainitem,motherbrain"
+    }
+]

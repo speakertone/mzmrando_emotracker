@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Tourian",
+        "chest_unopened_img": "images/tank_unopened.png",
+        "chest_opened_img": "images/tank_opened.png",
+        "color": "#9014a4",
+        "access_rules": [
+            "kraiditem,ridleyitem,$CanOpenRedDoors,ice",
+            "kraiditem,ridleyitem,$CanOpenRedDoors,IBNR"
+        ],
+        "children": [
+            {
+                "name": "Tourian (17, 11)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 96,
+                        "y": 1412
+                    },
+                    {
+                        "map": "tourian",
+                        "x": 288,
+                        "y": 480
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "charlieitem,super,speed"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Tourian (19, 12)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 160,
+                        "y": 1444
+                    },
+                    {
+                        "map": "tourian",
+                        "x": 352,
+                        "y": 512
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "charlieitem,super"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Mother Brain",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 160,
+                        "y": 1412
+                    },
+                    {
+                        "map": "tourian",
+                        "x": 352,
+                        "y": 480
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Boss",
+                        "access_rules": [
+                            "$notItem|charlieitem"
+                        ],
+                        "hosted_item": "motherbrainitem"
+                    }
+                ]
+            }
+        ]
+    }
+]

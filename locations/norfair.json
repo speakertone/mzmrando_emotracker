@@ -1,0 +1,610 @@
+[
+    {
+        "name": "Norfair",
+        "chest_unopened_img": "images/tank_unopened.png",
+        "chest_opened_img": "images/tank_opened.png",
+        "color": "#f2542a",
+        "access_rules": [
+            "$AccessNorfair"
+        ],
+        "children": [
+            {
+                "name": "Norfair (3, 11)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 896,
+                        "y": 1504
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 160,
+                        "y": 416
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$NorHeatRun,$AnyMissileCount|3,$ActiveGravity,$LedgeNW_8p"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (4, 12)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 928,
+                        "y": 1536
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 192,
+                        "y": 448
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$NorHeatRun,$AnyMissileCount|3,$ActiveGravity,$Ledge_4_5",
+                            "[],$NorHeatRun,$AnyMissileCount|3,grip,varia,$EnergyCount|450",
+                            "[],$NorHeatRun,$AnyMissileCount|3,grip,$EnergyCount|700",
+                            "{$NorHeatRun,$AnyMissileCount|3,grip,varia,$EnergyCount|150}",
+                            "{$NorHeatRun,$AnyMissileCount|3,grip,$EnergyCount|300}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (6, 7)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 992,
+                        "y": 1376
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 256,
+                        "y": 288
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Ability",
+                        "chest_unopened_img": "images/ability_unopened.png",
+                        "chest_opened_img": "images/ability_opened.png",
+                        "access_rules": [
+                            "$NorHeatRun,$Ledge_8p,screw",
+                            "$NorHeatRun,$Ledge_8p,$AnyMissileCount|4"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (8, 7)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1056,
+                        "y": 1376
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 320,
+                        "y": 288
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$NorHeatRun,$Ledge_8p,screw",
+                            "{$NorHeatRun,$Ledge_8p,$AnyMissileCount|4}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (10, 5)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1120,
+                        "y": 1312
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 384,
+                        "y": 224
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$BombChain,$CeilingTunnel_5",
+                            "{$BombChain}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (10, 6)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1120,
+                        "y": 1344
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 384,
+                        "y": 256
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$BombChain,$CeilingTunnel_5"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (10, 12)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1120,
+                        "y": 1536
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 384,
+                        "y": 448
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Ability",
+                        "chest_unopened_img": "images/ability_unopened.png",
+                        "chest_opened_img": "images/ability_opened.png",
+                        "access_rules": [
+                            "$NorHeatRun"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (11, 6)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1152,
+                        "y": 1344
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 416,
+                        "y": 256
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$NorShaft,speed,super,$HeatImmune",
+                            "$NorShaft,screw,super,$HeatImmune",
+                            "[],$NorShaft,speed,super,$EnergyCount|700",
+                            "[],$NorShaft,screw,super,$EnergyCount|500",
+                            "{$NorShaft,speed,super,$EnergyCount|350}",
+                            "{$NorShaft,screw,super,$EnergyCount|250}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (11, 13)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1152,
+                        "y": 1568
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 416,
+                        "y": 480
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$NorHeatRun,$CeilingTunnel_3_4,$LedgeNW_6_7"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (13, 13)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1216,
+                        "y": 1568
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 480,
+                        "y": 480
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$NorHeatRun,$LedgeNW_6_7"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (14, 6)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1248,
+                        "y": 1344
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 512,
+                        "y": 256
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$NorShaft,speed,super,$HeatImmune",
+                            "$NorShaft,screw,super,$HeatImmune",
+                            "[],$NorShaft,speed,super,$EnergyCount|500",
+                            "[],$NorShaft,screw,super,$EnergyCount|400",
+                            "{$NorShaft,speed,super,$EnergyCount|250}",
+                            "{$NorShaft,screw,super,$EnergyCount|200}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (15, 10)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1280,
+                        "y": 1472
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 544,
+                        "y": 384
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$NorHeatRun,super,$LedgeNW_8p",
+                            "$NorHeatRun,super,$CanFreeze,$CeilingTunnel_3_4"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (17, 10)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1344,
+                        "y": 1472
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 608,
+                        "y": 384
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$NorHeatRun,super,$CeilingTunnelNW_8p",
+                            "$NorHeatRun,super,$CanFreeze",
+                            "{$NorHeatRun,super}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (18, 3)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1376,
+                        "y": 1248
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 640,
+                        "y": 160
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Ability",
+                        "chest_unopened_img": "images/ability_unopened.png",
+                        "chest_opened_img": "images/ability_opened.png",
+                        "access_rules": [
+                            "$NorShaft,grip",
+                            "$NorShaft,$CanIBJ",
+                            "$NorShaft,$ActiveSpace",
+                            "$NorShaft,IWJ"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (19, 2)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1408,
+                        "y": 1216
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 672,
+                        "y": 128
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$NorShaft,$HeatImmune",
+                            "[],$NorShaft,$EnergyCount|120",
+                            "{$NorShaft}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (19, 8)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1408,
+                        "y": 1408
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 672,
+                        "y": 320
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Ability",
+                        "chest_unopened_img": "images/ability_unopened.png",
+                        "chest_opened_img": "images/ability_opened.png",
+                        "access_rules": [
+                            "$NorShaft,grip,$CeilingTunnel_8p",
+                            "$NorShaft,$CanIBJ,$CeilingTunnel_8p",
+                            "$NorShaft,$ActiveSpace,$CeilingTunnel_8p",
+                            "$NorShaft,IWJ,$CeilingTunnel_8p",
+                            "$NorShaft,speed,$CanOpenRedDoors",
+                            "$NorShaft,screw,$CanOpenRedDoors"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (20, 4)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1440,
+                        "y": 1280
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 704,
+                        "y": 192
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$BombChain,$LedgeNW_8p",
+                            "$BombChain,speed",
+                            "{$BombChain,$CeilingTunnel_5}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (21, 1)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1472,
+                        "y": 1184
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 736,
+                        "y": 96
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$NorShaft,grip,$CeilingTunnel_8p",
+                            "$NorShaft,$CanIBJ,$CeilingTunnel_8p",
+                            "$NorShaft,$ActiveSpace,$CeilingTunnel_8p",
+                            "$NorShaft,IWJ,$CeilingTunnel_8p",
+                            "$NorShaft,grip,ice,$notItem|RandEnemies,$CeilingTunnel_3_4",
+                            "$NorShaft,$CanIBJ,$notItem|RandEnemies,$CeilingTunnel_3_4",
+                            "$NorShaft,$ActiveSpace,$notItem|RandEnemies,$CeilingTunnel_3_4",
+                            "$NorShaft,IWJ,$notItem|RandEnemies,$CeilingTunnel_3_4"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (21, 11)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1472,
+                        "y": 1504
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 736,
+                        "y": 416
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$NorHeatRun,speed,$CeilingTunnel_3_4,wave,bomb",
+                            "$NorHeatRun,speed,$CeilingTunnel_3_4,wave,$ActivePlasma",
+                            "$NorHeatRun,speed,$CeilingTunnel_3_4,powerbomb",
+                            "{$NorHeatRun,speed,$CeilingTunnel_3_4,wave}",
+                            "{$NorShaft,grip,$CeilingTunnel_8p,wave}",
+                            "{$NorShaft,$CanIBJ,$CeilingTunnel_8p,wave}",
+                            "{$NorShaft,$ActiveSpace,$CeilingTunnel_8p,wave}",
+                            "{$NorShaft,IWJ,$CeilingTunnel_8p,wave}",
+                            "{$NorShaft,speed,$CeilingTunnel_6_7,wave}",
+                            "{$NorShaft,screw,$CeilingTunnel_6_7,wave}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (22, 8)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1504,
+                        "y": 1408
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 768,
+                        "y": 320
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$NorShaft,grip,$CeilingTunnel_8p",
+                            "$NorShaft,$CanIBJ,$CeilingTunnel_8p",
+                            "$NorShaft,$ActiveSpace,$CeilingTunnel_8p",
+                            "$NorShaft,IWJ,$CeilingTunnel_8p",
+                            "$NorShaft,speed,$CeilingTunnel_6_7",
+                            "$NorShaft,screw,$CeilingTunnel_6_7",
+                            "{$NorShaft,grip}",
+                            "{$NorShaft,$CanIBJ}",
+                            "{$NorShaft,$ActiveSpace}",
+                            "{$NorShaft,IWJ}",
+                            "{$NorShaft,speed}",
+                            "{$NorShaft,screw}"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            },
+            {
+                "name": "Norfair (22, 11)",
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1504,
+                        "y": 1504
+                    },
+                    {
+                        "map": "norfair",
+                        "x": 768,
+                        "y": 416
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Tank",
+                        "access_rules": [
+                            "$NorShaft,grip,$CeilingTunnel_8p",
+                            "$NorShaft,$CanIBJ,$CeilingTunnel_8p",
+                            "$NorShaft,$ActiveSpace,$CeilingTunnel_8p",
+                            "$NorShaft,IWJ,$CeilingTunnel_8p",
+                            "$NorHeatRun,speed,$CeilingTunnel_3_4,bomb",
+                            "$NorHeatRun,speed,$CeilingTunnel_3_4,powerbomb",
+                            "$NorHeatRun,speed,$CeilingTunnel_3_4,$ActivePlasma"
+                        ],
+                        "item_count": 1,
+                        "capture_item": true
+                    }
+                ]
+            }
+        ]
+    }
+]

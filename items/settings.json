@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Prevent soft locks",
+        "type": "progressive",
+        "initial_stage_idx": 2,
+        "allow_disabled": false,
+        "loop": true,
+        "stages": [
+            {
+                "img": "images/settings/PreventSoftLocks.png",
+                "codes": "PreventSoftLocks",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/settings/PreventSoftLocks-off.png",
+                "codes": "PreventSoftLocks-off,AllowSoftLocks",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Ice Beam not required",
+        "type": "toggle",
+        "loop": true,
+        "img": "images/settings/IBNR.png",
+        "codes": "IBNR,IceBeamNotRequired"
+    },
+    {
+        "name": "Plasma Beam not required",
+        "type": "toggle",
+        "loop": true,
+        "img": "images/settings/PBNR.png",
+        "codes": "PBNR,PlasmaBeamNotRequired"
+    },
+    {
+        "name": "Infinite bomb jump",
+        "type": "toggle",
+        "initial_active_state": true,
+        "loop": true,
+        "img": "images/settings/IBJ.png",
+        "codes": "IBJ,InfiniteBombJump"
+    },
+    {
+        "name": "Wall jumping",
+        "type": "toggle",
+        "initial_active_state": true,
+        "loop": true,
+        "img": "images/settings/WallJumping.png",
+        "codes": "IWJ,InfiniteWallJump,WallJumping"
+    },
+    {
+        "name": "Enable item toggle",
+        "type": "toggle",
+        "initial_active_state": true,
+        "loop": true,
+        "img": "images/settings/EnableItemToggle.png",
+        "codes": "EnableItemToggle,ItemToggle"
+    },
+    {
+        "name": "Obtain unknown items",
+        "type": "toggle",
+        "loop": true,
+        "img": "images/settings/ObtainUnknownItems.png",
+        "codes": "ObtainUnknownItems,ObtainUnknownItem,PreCharlie"
+    },
+    {
+        "name": "Randomize enemies",
+        "type": "toggle",
+        "loop": true,
+        "img": "images/settings/RandomizeEnemies.png",
+        "codes": "RandomizeEnemies,RandEnemies"
+    },
+    {
+        "name": "Manual tracking only",
+        "type": "static",
+        "img": "images/settings/noautotracking.png",
+        "codes": "noautotracking"
+    }
+]
