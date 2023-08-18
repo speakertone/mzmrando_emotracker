@@ -56,7 +56,7 @@
                                             {
                                                 "type": "item",
                                                 "margin": "0, 0, 0, 0",
-                                                "canvas_left": 212,
+                                                "canvas_left": 229,
                                                 "canvas_depth": 1,
                                                 "item": "noautotracking"
                                             }
@@ -83,7 +83,7 @@
                             },
                             {
                                 "type": "group",
-                                "header": "Tricks",
+                                "header": "Logic",
                                 "margin": "0, 0, 0, 10",
                                 "content": [
                                     {
@@ -100,7 +100,7 @@
                                             {
                                                 "type": "item",
                                                 "margin": "0, 0, 0, 0",
-                                                "canvas_left": 212,
+                                                "canvas_left": 229,
                                                 "canvas_depth": 1,
                                                 "item": "noautotracking"
                                             }
@@ -109,7 +109,6 @@
                                     {
                                         "type": "canvas",
                                         "margin": "0, 25, 0, 0",
-                                        "height": 16,
                                         "content": [
                                             {
                                                 "type": "item",
@@ -121,7 +120,108 @@
                                             {
                                                 "type": "item",
                                                 "margin": "0, 0, 0, 0",
-                                                "canvas_left": 212,
+                                                "canvas_left": 229,
+                                                "canvas_depth": 1,
+                                                "item": "noautotracking"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "canvas",
+                                        "margin": "0, 50, 0, 0",
+                                        "content": [
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_top": 4,
+                                                "canvas_depth": 2,
+                                                "item": "GIB"
+                                            },
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_left": 229,
+                                                "canvas_depth": 1,
+                                                "item": "noautotracking"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "canvas",
+                                        "margin": "0, 75, 0, 0",
+                                        "content": [
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_top": 4,
+                                                "canvas_depth": 2,
+                                                "item": "GPB"
+                                            },
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_left": 229,
+                                                "canvas_depth": 1,
+                                                "item": "noautotracking"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "canvas",
+                                        "margin": "0, 100, 0, 0",
+                                        "content": [
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_top": 4,
+                                                "canvas_depth": 2,
+                                                "item": "HellRuns"
+                                            },
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_left": 229,
+                                                "canvas_depth": 1,
+                                                "item": "noautotracking"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "canvas",
+                                        "margin": "0, 125, 0, 0",
+                                        "content": [
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_top": 4,
+                                                "canvas_depth": 2,
+                                                "item": "LavaDive"
+                                            },
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_left": 229,
+                                                "canvas_depth": 1,
+                                                "item": "noautotracking"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "canvas",
+                                        "margin": "0, 150, 0, 0",
+                                        "height": 16,
+                                        "content": [
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_top": 4,
+                                                "canvas_depth": 2,
+                                                "item": "TrickyShinesparks"
+                                            },
+                                            {
+                                                "type": "item",
+                                                "margin": "0, 0, 0, 0",
+                                                "canvas_left": 229,
                                                 "canvas_depth": 1,
                                                 "item": "noautotracking"
                                             }
@@ -136,18 +236,28 @@
                                 "content": [
                                     {
                                         "type": "item",
-                                        "margin":"0, 4, 0, 0",
+                                        "margin": "0, 4, 0, 0",
                                         "item": "EnableItemToggle"
                                     },
                                     {
                                         "type": "item",
-                                        "margin":"0, 29, 0, 0",
+                                        "margin": "0, 29, 0, 0",
                                         "item": "ObtainUnknownItems"
                                     },
                                     {
                                         "type": "item",
-                                        "margin":"0, 54, 0, 0",
+                                        "margin": "0, 54, 0, 0",
                                         "item": "RandomizeEnemies"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "margin": "0, 79, 0, 0",
+                                        "item": "DisableIBJ"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "margin": "0, 104, 0, 0",
+                                        "item": "DisableIWJ"
                                     }
                                 ]
                             }

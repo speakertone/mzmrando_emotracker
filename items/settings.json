@@ -2,7 +2,7 @@
     {
         "name": "Prevent soft locks",
         "type": "progressive",
-        "initial_stage_idx": 2,
+        "initial_stage_idx": 0,
         "allow_disabled": false,
         "loop": true,
         "stages": [
@@ -33,20 +33,53 @@
         "codes": "PBNR,PlasmaBeamNotRequired"
     },
     {
-        "name": "Infinite bomb jump",
+        "name": "Can Infinite Bomb Jump",
         "type": "toggle",
-        "initial_active_state": true,
         "loop": true,
         "img": "images/settings/IBJ.png",
         "codes": "IBJ,InfiniteBombJump"
     },
     {
-        "name": "Wall jumping",
+        "name": "Can Wall Jump",
         "type": "toggle",
-        "initial_active_state": true,
         "loop": true,
-        "img": "images/settings/WallJumping.png",
+        "img": "images/settings/IWJ.png",
         "codes": "IWJ,InfiniteWallJump,WallJumping"
+    },
+    {
+        "name": "Guarantee Ice Beam",
+        "type": "toggle",
+        "loop": true,
+        "img": "images/settings/GIB.png",
+        "codes": "GIB,GuaranteeIceBeam,GuaranteeIce"
+    },
+    {
+        "name": "Guarantee Plasma Beam",
+        "type": "toggle",
+        "loop": true,
+        "img": "images/settings/GPB.png",
+        "codes": "GPB,GuaranteePlasmaBeam,GuaranteePlasma"
+    },
+    {
+        "name": "Hell Runs",
+        "type": "toggle",
+        "loop": true,
+        "img": "images/settings/HellRuns.png",
+        "codes": "HellRuns,HellRun"
+    },
+    {
+        "name": "Lava Dive",
+        "type": "toggle",
+        "loop": true,
+        "img": "images/settings/LavaDive.png",
+        "codes": "LavaDive"
+    },
+    {
+        "name": "Tricky Shinesparks",
+        "type": "toggle",
+        "loop": true,
+        "img": "images/settings/TrickyShinesparks.png",
+        "codes": "TrickyShinesparks,TrickyShines,TrickySparks"
     },
     {
         "name": "Enable item toggle",
@@ -69,6 +102,20 @@
         "loop": true,
         "img": "images/settings/RandomizeEnemies.png",
         "codes": "RandomizeEnemies,RandEnemies"
+    },
+    {
+        "name": "Disable infinite bomb jump",
+        "type": "toggle",
+        "loop": true,
+        "img": "images/settings/DisableInfiniteBombJump.png",
+        "codes": "DisableInfiniteBombJump,DisableIBJ"
+    },
+    {
+        "name": "Disable wall jump",
+        "type": "toggle",
+        "loop": true,
+        "img": "images/settings/DisableWallJump.png",
+        "codes": "DisableWallJump,DisableIWJ"
     },
     {
         "name": "Manual tracking only",
