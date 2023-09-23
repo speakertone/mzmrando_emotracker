@@ -1,5 +1,5 @@
 -- Configuration --------------------------------------
-AUTOTRACKER_ENABLE_DEBUG_LOGGING = false
+AUTOTRACKER_ENABLE_DEBUG_LOGGING = true
 -------------------------------------------------------
 
 print("")
@@ -471,11 +471,11 @@ function updateAbilityLocations(segment)
         InvalidateReadCaches()
         local address = 0x2037e00
 
-        updateSectionChestCountFromByteAndFlag(segment, "@Brinstar (0, 15)/Ability", address + 0xa, 0x08)
-        updateSectionChestCountFromByteAndFlag(segment, "@Brinstar (6, 6)/Ability", address + 0x9, 0x80)
-        updateSectionChestCountFromByteAndFlag(segment, "@Brinstar (14, 2)/Ability", address + 0x2, 0x08)
-        updateSectionChestCountFromByteAndFlag(segment, "@Brinstar (14, 12)/Ability", address + 0x2, 0x10)
-        updateSectionChestCountFromByteAndFlag(segment, "@Brinstar (24, 6)/Ability", address + 0xa, 0x04)
+        updateSectionChestCountFromByteAndFlag(segment, "@0: Brinstar Morph/Ability", address + 0xa, 0x08)
+        updateSectionChestCountFromByteAndFlag(segment, "@2: Brinstar Long/Ability", address + 0x9, 0x80)
+        updateSectionChestCountFromByteAndFlag(segment, "@8: Brinstar Varia/Ability", address + 0x2, 0x08)
+        updateSectionChestCountFromByteAndFlag(segment, "@9: Brinstar Worm/Ability", address + 0x2, 0x10)
+        updateSectionChestCountFromByteAndFlag(segment, "@17: Brinstar Bombs/Ability", address + 0xa, 0x04)
 
         updateSectionChestCountFromByteAndFlag(segment, "@Kraid (7, 14)/Ability", address + 0x2, 0x40)
         updateSectionChestCountFromByteAndFlag(segment, "@Kraid (8, 15)/Ability", address + 0xa, 0x10)
@@ -502,25 +502,25 @@ function updateBrinstar(segment)
         local sAddress = 0x2036c00
         local eAddress = 0x2036c4c
 
-        --updateSectionChestCountFromValue(segment, "@Brinstar (0, 15)/Ability", sAddress, eAddress, {0x1b0a,0x1b0b,0x1b0c})
-        updateSectionChestCountFromValue(segment, "@Brinstar (5, 14)/Tank", sAddress, eAddress, {0x070d})
-        --updateSectionChestCountFromValue(segment, "@Brinstar (6, 6)/Ability", sAddress, eAddress, {0x0708})
-        updateSectionChestCountFromValue(segment, "@Brinstar (7, 15)/Tank", sAddress, eAddress, {0x021c})
-        updateSectionChestCountFromValue(segment, "@Brinstar (9, 11)/Tank", sAddress, eAddress, {0x1205})
-        updateSectionChestCountFromValue(segment, "@Brinstar (9, 12)/Tank", sAddress, eAddress, {0x1905})
-        updateSectionChestCountFromValue(segment, "@Brinstar (11, 3)/Tank", sAddress, eAddress, {0x0a04})
-        updateSectionChestCountFromValue(segment, "@Brinstar (11, 12)/Tank", sAddress, eAddress, {0x0407})
-        --updateSectionChestCountFromValue(segment, "@Brinstar (14, 2)/Ability", sAddress, eAddress, {0x0607,0x0608,0x0707,0x0708})
-        --updateSectionChestCountFromValue(segment, "@Brinstar (14, 12)/Ability", sAddress, eAddress, {0x0713,0x0714,0x0813,0x0814,0x0913,0x0914})
-        updateSectionChestCountFromValue(segment, "@Brinstar (16, 3)/Tank", sAddress, eAddress, {0x1012})
-        updateSectionChestCountFromValue(segment, "@Brinstar (16, 12)/Tank", sAddress, eAddress, {0x0636})
-        updateSectionChestCountFromValue(segment, "@Brinstar (17, 7)/Tank", sAddress, eAddress, {0x0604})
-        updateSectionChestCountFromValue(segment, "@Brinstar (17, 10)/Tank", sAddress, eAddress, {0x170e})
-        updateSectionChestCountFromValue(segment, "@Brinstar (22, 8)/Tank", sAddress, eAddress, {0x0a0b})
-        updateSectionChestCountFromValue(segment, "@Brinstar (23, 4)/Tank", sAddress, eAddress, {0x0527})
-        updateSectionChestCountFromValue(segment, "@Brinstar (23, 6)/Tank", sAddress, eAddress, {0x050b})
-        --updateSectionChestCountFromValue(segment, "@Brinstar (24, 6)/Ability", sAddress, eAddress, {0x0616,0x0617,0x0716,0x0717})
-        updateSectionChestCountFromValue(segment, "@Brinstar (24, 8)/Tank", sAddress, eAddress, {0x0627})
+        --updateSectionChestCountFromValue(segment, "@0: Brinstar Morph/Ability", sAddress, eAddress, {0x1b0a,0x1b0b,0x1b0c})
+        updateSectionChestCountFromValue(segment, "@1: Brinstar Ball Cannon/Tank", sAddress, eAddress, {0x070d})
+        --updateSectionChestCountFromValue(segment, "@2: Brinstar Long/Ability", sAddress, eAddress, {0x0708})
+        updateSectionChestCountFromValue(segment, "@3: Brinstar Ceiling E-Tank/Tank", sAddress, eAddress, {0x021c})
+        updateSectionChestCountFromValue(segment, "@4: Brinstar Above Super/Tank", sAddress, eAddress, {0x1205})
+        updateSectionChestCountFromValue(segment, "@5: Brinstar Super/Tank", sAddress, eAddress, {0x1905})
+        updateSectionChestCountFromValue(segment, "@6: Brinstar Top Missile/Tank", sAddress, eAddress, {0x0a04})
+        updateSectionChestCountFromValue(segment, "@7: Brinstar Shortcut Missile/Tank", sAddress, eAddress, {0x0407})
+        --updateSectionChestCountFromValue(segment, "@8: Brinstar Varia/Ability", sAddress, eAddress, {0x0607,0x0608,0x0707,0x0708})
+        --updateSectionChestCountFromValue(segment, "@9: Brinstar Worm/Ability", sAddress, eAddress, {0x0713,0x0714,0x0813,0x0814,0x0913,0x0914})
+        updateSectionChestCountFromValue(segment, "@10: Brinstar Varia E-Tank/Tank", sAddress, eAddress, {0x1012})
+        updateSectionChestCountFromValue(segment, "@11: Brinstar First Missile/Tank", sAddress, eAddress, {0x0636})
+        updateSectionChestCountFromValue(segment, "@12: Brinstar Hive Missile/Tank", sAddress, eAddress, {0x0604})
+        updateSectionChestCountFromValue(segment, "@13: Brinstar Under Bridge/Tank", sAddress, eAddress, {0x170e})
+        updateSectionChestCountFromValue(segment, "@14: Brinstar Post-Hive Missile/Tank", sAddress, eAddress, {0x0a0b})
+        updateSectionChestCountFromValue(segment, "@15: Brinstar Pillar Missile/Tank", sAddress, eAddress, {0x0527})
+        updateSectionChestCountFromValue(segment, "@16: Brinstar Behind Bombs/Tank", sAddress, eAddress, {0x050b})
+        --updateSectionChestCountFromValue(segment, "@17: Brinstar Bombs/Ability", sAddress, eAddress, {0x0616,0x0617,0x0716,0x0717})
+        updateSectionChestCountFromValue(segment, "@18: Brinstar Post-Hive E-Tank/Tank", sAddress, eAddress, {0x0627})
     end
     return true
 end

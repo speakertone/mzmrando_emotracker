@@ -6,7 +6,7 @@
         "color": "#0004fc",
         "children": [
             {
-                "name": "Brinstar (0, 15)",
+                "name": "0: Brinstar Morph",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -30,7 +30,7 @@
                 ]
             },
             {
-                "name": "Brinstar (5, 14)",
+                "name": "1: Brinstar Ball Cannon",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -54,7 +54,7 @@
                 ]
             },
             {
-                "name": "Brinstar (6, 6)",
+                "name": "2: Brinstar Long",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -74,12 +74,11 @@
                         "chest_opened_img": "images/ability_opened.png",
                         "access_rules": [
                             "morph,long",
-                            "morph,ice",
                             "morph,wave",
                             "morph,$ActivePlasma",
                             "morph,$AnyMissileCount|2",
                             "$BombChain",
-                            "{morph,PreventSoftLocks-off}"
+                            "{morph,AllowSoftLocks}"
                         ],
                         "item_count": 1,
                         "capture_item": true
@@ -87,7 +86,7 @@
                 ]
             },
             {
-                "name": "Brinstar (7, 15)",
+                "name": "3: Brinstar Ceiling E-Tank",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -107,6 +106,7 @@
                             "$ActiveSpace",
                             "$CanIBJ",
                             "Hard,$CanFreeze",
+                            "TrickyShinesparks,speed",
                             "{}"
                         ],
                         "item_count": 1,
@@ -115,7 +115,7 @@
                 ]
             },
             {
-                "name": "Brinstar (9, 11)",
+                "name": "4: Brinstar Above Super",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -132,14 +132,15 @@
                     {
                         "name": "Tank",
                         "access_rules": [
-                            "morph,$Ledge_6_7,$BombBlock"
+                            "morph,$Ledge_6_7,$BombBlock",
+                            "morph,$CanFreeze,$BombBlock"
                         ],
                         "item_count": 1
                     }
                 ]
             },
             {
-                "name": "Brinstar (9, 12)",
+                "name": "5: Brinstar Super",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -157,7 +158,8 @@
                         "name": "Tank",
                         "access_rules": [
                             "$BallSpark",
-                            "{morph,$Ledge_6_7,$BombBlock}"
+                            "{morph,$Ledge_6_7,$BombBlock}",
+                            "{morph,$CanFreeze,$BombBlock}"
                         ],
                         "item_count": 1,
                         "capture_item": true
@@ -165,7 +167,7 @@
                 ]
             },
             {
-                "name": "Brinstar (11, 3)",
+                "name": "6: Brinstar Top Missile",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -183,7 +185,13 @@
                         "name": "Tank",
                         "access_rules": [
                             "$CeilingTunnel_8p,$CeilingTunnel_1_2",
-                            "$CeilingTunnel_8p,$BombBlock"
+                            "$CeilingTunnel_8p,$BombBlock",
+                            "morph,grip,$CanFreeze,$CeilingTunnel_1_2",
+                            "morph,grip,$CanFreeze,$BombBlock",
+                            "$BallSpark,TrickyShinesparks",
+                            "$CanIBJ",
+                            "{AllowSoftLocks,$CeilingTunnel_8p}",
+                            "{AllowSoftLocks,morph,grip,$CanFreeze}"
                         ],
                         "item_count": 1,
                         "capture_item": true
@@ -191,7 +199,7 @@
                 ]
             },
             {
-                "name": "Brinstar (11, 12)",
+                "name": "7: Brinstar Shortcut Missile",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -208,7 +216,7 @@
                     {
                         "name": "Tank",
                         "access_rules": [
-                            "$BombChain,$CeilingTunnel_1_2",
+                            "$BombChain,$CeilingTunnel_1_2,$Ledge_6_7",
                             "$BallSpark",
                             "{morph}"
                         ],
@@ -218,7 +226,7 @@
                 ]
             },
             {
-                "name": "Brinstar (14, 2)",
+                "name": "8: Brinstar Varia",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -237,14 +245,21 @@
                         "chest_unopened_img": "images/ability_unopened.png",
                         "chest_opened_img": "images/ability_opened.png",
                         "access_rules": [
-                            "$BombChain,$CeilingTunnel_1_2,$LedgeNW_6_7,$CeilingTunnelNW_6_7,$CanOpenRedDoors"
+                            "$BombChain,$CeilingTunnel_1_2,$LedgeNW_6_7,grip,$CanOpenRedDoors",
+                            "$BombChain,$CeilingTunnel_1_2,$LedgeNW_6_7,$CanIBJ,$CanOpenRedDoors",
+                            "$BombChain,$CeilingTunnel_1_2,$LedgeNW_6_7,hijump,$CanIWJ,$CanOpenRedDoors",
+                            "$BombChain,$CeilingTunnel_1_2,$LedgeNW_6_7,hijump,$ActiveGravity,$CanOpenRedDoors",
+                            "$BombChain,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,grip,$CanOpenRedDoors",
+                            "$BombChain,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$CanIBJ,$CanOpenRedDoors",
+                            "$BombChain,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,hijump,$CanIWJ,$CanOpenRedDoors",
+                            "$BombChain,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,hijump,$ActiveGravity,$CanOpenRedDoors"
                         ],
                         "item_count": 1
                     }
                 ]
             },
             {
-                "name": "Brinstar (14, 12)",
+                "name": "9: Brinstar Worm",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -270,7 +285,7 @@
                 ]
             },
             {
-                "name": "Brinstar (16, 3)",
+                "name": "10: Brinstar Varia E-Tank",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -288,8 +303,58 @@
                         "name": "Tank",
                         "access_rules": [
                             "$BombChain,$CeilingTunnel_1_2,$LedgeNW_6_7,$HeatImmune",
-                            "$BombChain,$CeilingTunnel_1_2,$LedgeNW_6_7,$EnergyCount|150",
-                            "{$BombChain,$CeilingTunnel_1_2,$LedgeNW_6_7}"
+                            "$BombChain,$CeilingTunnel_1_2,$LedgeNW_6_7,$CanLavaDive,$EnergyCount|150",
+                            "$BombChain,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$HeatImmune",
+                            "$BombChain,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$CanLavaDive,$EnergyCount|150",
+
+                            "$BombBlock,$CeilingTunnel_1_2,$LedgeNW_6_7,$HeatImmune,long",
+                            "$BombBlock,$CeilingTunnel_1_2,$LedgeNW_6_7,$CanLavaDive,$EnergyCount|150,long",
+                            "$BombBlock,$CeilingTunnel_1_2,$LedgeNW_6_7,$HeatImmune,wave",
+                            "$BombBlock,$CeilingTunnel_1_2,$LedgeNW_6_7,$CanLavaDive,$EnergyCount|150,wave",
+                            "$BombBlock,$CeilingTunnel_1_2,$LedgeNW_6_7,$HeatImmune,$AnyMissileCount|5",
+                            "$BombBlock,$CeilingTunnel_1_2,$LedgeNW_6_7,$CanLavaDive,$EnergyCount|150,$AnyMissileCount|5",
+
+                            "$BombBlock,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$HeatImmune,long",
+                            "$BombBlock,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$CanLavaDive,$EnergyCount|150,long",
+                            "$BombBlock,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$HeatImmune,wave",
+                            "$BombBlock,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$CanLavaDive,$EnergyCount|150,wave",
+                            "$BombBlock,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$HeatImmune,$AnyMissileCount|5",
+                            "$BombBlock,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$CanLavaDive,$EnergyCount|150,$AnyMissileCount|5",
+
+                            "$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_6_7,$HeatImmune,long",
+                            "$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_6_7,$CanLavaDive,$EnergyCount|150,long",
+                            "$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_6_7,$HeatImmune,wave",
+                            "$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_6_7,$CanLavaDive,$EnergyCount|150,wave",
+                            "$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_6_7,$HeatImmune,$AnyMissileCount|5",
+                            "$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_6_7,$CanLavaDive,$EnergyCount|150,$AnyMissileCount|5",
+
+                            "$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$CanFreeze,TrickyShinesparks,speed,$HeatImmune,long",
+                            "$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$CanFreeze,TrickyShinesparks,speed,$CanLavaDive,$EnergyCount|150,long",
+                            "$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$CanFreeze,TrickyShinesparks,speed,$HeatImmune,wave",
+                            "$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$CanFreeze,TrickyShinesparks,speed,$CanLavaDive,$EnergyCount|150,wave",
+                            "$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$CanFreeze,TrickyShinesparks,speed,$HeatImmune,$AnyMissileCount|5",
+                            "$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$CanFreeze,TrickyShinesparks,speed,$CanLavaDive,$EnergyCount|150,$AnyMissileCount|5",
+
+                            "$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$LedgeNW_6_7,$HeatImmune,long",
+                            "$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$LedgeNW_6_7,$CanLavaDive,$EnergyCount|150,long",
+                            "$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$LedgeNW_6_7,$HeatImmune,wave",
+                            "$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$LedgeNW_6_7,$CanLavaDive,$EnergyCount|150,wave",
+                            "$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$LedgeNW_6_7,$HeatImmune,$AnyMissileCount|5",
+                            "$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$LedgeNW_6_7,$CanLavaDive,$EnergyCount|150,$AnyMissileCount|5",
+
+                            "$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$HeatImmune,long",
+                            "$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$CanLavaDive,$EnergyCount|150,long",
+                            "$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$HeatImmune,wave",
+                            "$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$CanLavaDive,$EnergyCount|150,wave",
+                            "$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$HeatImmune,$AnyMissileCount|5",
+                            "$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed,$CanLavaDive,$EnergyCount|150,$AnyMissileCount|5",
+
+                            "{$BombBlock,$CeilingTunnel_1_2,$LedgeNW_6_7}",
+                            "{$BombBlock,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed}",
+                            "{$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$LedgeNW_6_7}",
+                            "{$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4,$CanFreeze,TrickyShinesparks,speed}",
+                            "{$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$LedgeNW_6_7}",
+                            "{$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$CanFreeze,TrickyShinesparks,speed}"
                         ],
                         "item_count": 1,
                         "capture_item": true
@@ -297,7 +362,7 @@
                 ]
             },
             {
-                "name": "Brinstar (16, 12)",
+                "name": "11: Brinstar First Missile",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -321,7 +386,7 @@
                 ]
             },
             {
-                "name": "Brinstar (17, 7)",
+                "name": "12: Brinstar Hive Missile",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -345,7 +410,7 @@
                 ]
             },
             {
-                "name": "Brinstar (17, 10)",
+                "name": "13: Brinstar Under Bridge",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -372,7 +437,7 @@
                 ]
             },
             {
-                "name": "Brinstar (22, 8)",
+                "name": "14: Brinstar Post-Hive Missile",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -396,7 +461,7 @@
                 ]
             },
             {
-                "name": "Brinstar (23, 4)",
+                "name": "15: Brinstar Pillar Missile",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -413,14 +478,16 @@
                     {
                         "name": "Tank",
                         "access_rules": [
-                            "$BombChain,$CeilingTunnel_1_2"
+                            "$BombBlock,$CeilingTunnel_1_2",
+                            "morph,$CanOpenRedDoors,$LedgeNW_8p,$CeilingTunnel_1_2,$CeilingTunnel_3_4",
+                            "morph,$CanOpenRedDoors,hijump,$CanFreeze,$CanIWJ,$CeilingTunnel_1_2,$CeilingTunnel_3_4"
                         ],
                         "item_count": 1
                     }
                 ]
             },
             {
-                "name": "Brinstar (23, 6)",
+                "name": "16: Brinstar Behind Bombs",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -437,8 +504,8 @@
                     {
                         "name": "Tank",
                         "access_rules": [
-                            "missile,$BombChain,$CeilingTunnel_1_2",
-                            "{missile,$CanPowerBomb}"
+                            "$CanOpenRedDoors,$BombChain,$CeilingTunnel_1_2",
+                            "{$CanOpenRedDoors,$CanPowerBomb}"
                         ],
                         "item_count": 1,
                         "capture_item": true
@@ -446,7 +513,7 @@
                 ]
             },
             {
-                "name": "Brinstar (24, 6)",
+                "name": "17: Brinstar Bombs",
                 "map_locations": [
                     {
                         "map": "fullmap",
@@ -472,7 +539,7 @@
                 ]
             },
             {
-                "name": "Brinstar (24, 8)",
+                "name": "18: Brinstar Post-Hive E-Tank",
                 "map_locations": [
                     {
                         "map": "fullmap",

@@ -63,7 +63,28 @@ end
 --Functions mostly taken verbatim from Conditions.cs of the randomizer
 
 function CanIBJ()
-  if has("IBJ") and has("morph") and has("bomb") then
+  if (~has("DisableIBJ")) and has("IBJ") and has("morph") and has("bomb") then
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+  return 0
+end
+
+function CanIWJ()
+  if (~has("DisableIWJ")) and has("IWJ") then
+    return 1
+  end
+  return 0
+end
+
+function CanHellRun()
+  if has("HellRun") then
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+  return 0
+end
+
+function CanLavaDive()
+  if has("LavaDive") then
     return 1, AccessibilityLevel.SequenceBreak
   end
   return 0
@@ -113,7 +134,7 @@ end
 
 function AccessNorfair()
   if BombChain() == 1 then
-    if (has("screw") and (has("IWJ") or ActiveSpace() == 1)) or (CanPowerBomb() == 1 and ActiveGravity() == 1 and has("speed")) then
+    if (has("screw") and (CanIWJ() == 1 or ActiveSpace() == 1)) or (CanPowerBomb() == 1 and ActiveGravity() == 1 and has("speed")) then
       return 1
     elseif CeilingTunnel_5() == 1 then
       return CeilingTunnel_5()
@@ -149,9 +170,9 @@ end
 
 function LeaveChozodiaTemple()
   if has("charlieitem") then
-    if CanPowerBomb() == 1 and has("screw") and ((has("IWJ") and has("hijump")) or has("space")) then
+    if CanPowerBomb() == 1 and has("screw") and ((CanIWJ() == 1 and has("hijump")) or has("space")) then
       return 1
-    elseif ((has("IWJ") and has("hijump")) or (has("space") and (has("gravity") or has("IWJ")))) and (has("screw") or BombChain() == 1) then
+    elseif ((CanIWJ() == 1 and has("hijump")) or (has("space") and (has("gravity") or CanIWJ() == 1))) and (has("screw") or BombChain() == 1) then
       return ChoLavaRun()
     end
   elseif LedgeNW_8p() == 1 and CanPowerBomb() == 1 then
@@ -179,7 +200,7 @@ function NorHeatRun()
   elseif HeatImmune() == 1 and LedgeNW_8p() == 1 then
     return LedgeNW_8p()
   elseif EnergyCount(200) == 1 and (has("speed") or LedgeNW_8p() == 1) then
-    return 1, AccessibilityLevel.SequenceBreak
+    return CanHellRun()
   end
   return 0
 end
@@ -188,7 +209,7 @@ function ChoLavaRun()
   if has("gravity") and Ledge_8p() == 1 then
     return Ledge_8p()
   elseif ((has("varia") and EnergyCount(200) == 1) or EnergyCount(300) == 1) and Ledge_8p() == 1 then
-    return 1, AccessibilityLevel.SequenceBreak
+    return CanLavaDive()
   end
   return 0
 end
@@ -206,7 +227,7 @@ end
 
 --[[ function Item57()
   if NorShaft() == 1 and CeilingTunnel_8p() == 1 and
-   (has("grip") or has("IWJ") or ActiveSpace() == 1 or CanIBJ() == 1) and
+   (has("grip") or CanIWJ() == 1 or ActiveSpace() == 1 or CanIBJ() == 1) and
    (Launcher() == 1 or has("speed")) then
     return CeilingTunnel_8p()
   elseif NorHeatRun() == 1 and CeilingTunnel_3_4() == 1 and has("speed") and
@@ -251,7 +272,7 @@ end
 --Locations taken verbatim from Conditions.cs of the randomizer (NW = No Wall)
 
 function Ledge_4_5()
-  if has("hijump") or has("grip") or has("IWJ") or ActiveSpace() == 1 then
+  if has("hijump") or has("grip") or CanIWJ() == 1 or ActiveSpace() == 1 then
     return 1
   end
   return CanIBJ()
@@ -265,7 +286,7 @@ function LedgeNW_5()
 end
 
 function Ledge_6_7()
-  if (has("hijump") and has("grip")) or has("IWJ") or ActiveSpace() == 1 then
+  if (has("hijump") and has("grip")) or CanIWJ() == 1 or ActiveSpace() == 1 then
     return 1
   end
   return CanIBJ()
@@ -279,7 +300,7 @@ function LedgeNW_6_7()
 end
 
 function Ledge_8p()
-  if has("IWJ") or ActiveSpace() == 1 then
+  if CanIWJ() == 1 or ActiveSpace() == 1 then
     return 1
   end
   return CanIBJ()
@@ -314,7 +335,7 @@ function CeilingTunnel_5()
 end
 
 function CeilingTunnel_6_7()
-  if has("morph") and has("grip") and (has("hijump") or ActiveSpace() == 1 or has("IWJ")) then
+  if has("morph") and has("grip") and (has("hijump") or ActiveSpace() == 1 or CanIWJ() == 1) then
     return 1
   end
   return CanIBJ()
@@ -328,7 +349,7 @@ function CeilingTunnelNW_6_7()
 end
 
 function CeilingTunnel_8p()
-  if has("morph") and has("grip") and (ActiveSpace() == 1 or has("IWJ")) then
+  if has("morph") and has("grip") and (ActiveSpace() == 1 or CanIWJ() == 1) then
     return 1
   end
   return CanIBJ()
@@ -349,7 +370,7 @@ function Tunnel_1_3()
 end
 
 function Tunnel_4_5()
-  if has("morph") and (has("grip") or has("hijump") or ActiveSpace() == 1 or has("IWJ")) then
+  if has("morph") and (has("grip") or has("hijump") or ActiveSpace() == 1 or CanIWJ() == 1) then
     return 1
   end
   return CanIBJ()
@@ -363,7 +384,7 @@ function TunnelNW_4_5()
 end
 
 function Tunnel_6_7()
-  if has("morph") and ((has("grip") and has("hijump")) or ActiveSpace() == 1 or has("IWJ")) then
+  if has("morph") and ((has("grip") and has("hijump")) or ActiveSpace() == 1 or CanIWJ() == 1) then
     return 1
   end
   return CanIBJ()
@@ -377,7 +398,7 @@ function TunnelNW_6_7()
 end
 
 function Tunnel_8p()
-  if has("morph") and (ActiveSpace() == 1 or has("IWJ")) then
+  if has("morph") and (ActiveSpace() == 1 or CanIWJ() == 1) then
     return 1
   end
   return CanIBJ()
